@@ -1,0 +1,203 @@
+
+/**************/
+/**** text ****/
+/**************/
+body { font-family: Verdana, Helvetica, sans-serif;}
+
+h1, h2, h3 {
+  font-family: Verdana, Serif;
+  font-weight: normal;
+  text-shadow: none;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2em;
+}
+
+h2, h3 {
+  color: #e22;
+}
+
+p,  a,  code, ul, li {
+  font-size: 1.2em;
+  color: #000;
+}
+
+a, a > code {
+  color: #FF0000;
+}
+
+ul li::marker {
+  color: #ff0000; !important
+}
+
+
+/**********/
+/* remark */
+/**********/
+.remark-code-line-highlighted {
+  background-color: #FF000060;
+}
+
+.remark-slide-content {
+  border-top:    20px solid white;
+  border-left:  20px solid white; 
+  border-bottom: 20px solid white;
+  background-color: #eff;
+}
+
+.remark-slide-content > h1 {
+  color: #e22;
+}
+
+.remark-slide-number {
+  font-size: 14pt;
+  margin-right: 10px;
+  margin-bottom: 14px;
+}
+
+.middle {
+  border: none;
+}
+
+.no-border {
+  border: none; !important
+}
+
+
+/***************/
+/* title slide */
+/***************/
+
+.title-slide {
+  background-color: #eff ;
+  padding: 30px ;
+  background-origin: padding-box;
+  background-size: 100%, 100%;
+  background-position: 100% 0%, left;
+  background-image:  url("ascor_header.png");
+  border: 20px solid white ;
+}
+
+.title-slide h1,
+.title-slide h2,
+.title-slide h3{
+  border: none;
+  color: #e22;
+  text-shadow: none;
+}
+
+
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+/***************/
+/***** red *****/
+/***************/
+.red {
+  border-color: #e22;
+  text-shadow: none;
+}
+
+.red h1 {
+  color: #fff;
+}
+
+.middle.red,
+.red.middle {
+  background-color: #e22;
+}
+
+.middle.red h1,
+.red.middle h1,
+.middle.red h2,
+.red.middle h2,
+.middle.red h3,
+.red.middle h3,
+.red.middle p {
+  color: #fff;
+}
+
+.red  h1,
+.red  h2,
+.red  h3{
+  border: none;
+  color: #000;
+  text-shadow: none;
+}
+
+.red.middle ul > li::marker ,
+.middle.red ul > li::marker {
+  color: #fff;
+}
+
+/***************/
+/**** black ****/
+/***************/
+.black {
+  background-color: #000;
+  border-color: #fff;
+  text-shadow: none;
+  color: #fff;
+}
+
+
+.black  h1,
+.black  h2,
+.black  h3{
+  border: none;
+  color: #fff;
+  text-shadow: none;
+}
+
+.black p,  
+.black a,  
+.black code, 
+.black ul, 
+.black li {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+
+ul li::marker {
+  color: #ff0000; !important
+}
+
+/***************/
+/**** white ****/
+/***************/
+.white {
+  background-color: #fff;
+  border-color: #fff;
+  text-shadow: none;
+  color: #000;
+}
+
+
+
+
+/************************/
+/* Logo on the side div */
+/************************/
+div.logo {
+    position: fixed;
+    left: 69%;
+    bottom: 45%;
+    height: 2.5em;
+    width: calc(100% * .55); /* fix sidebar height */
+    padding: 0.5em;
+    opacity: 0.7;
+    background-color: #fff;
+    background-position: right;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("ascor_side.png"),
+    linear-gradient(70deg, #fff, #ffffff00 30%);
+    transform: rotate(-90deg);
+}
+
+
