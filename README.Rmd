@@ -13,14 +13,14 @@ knitr::opts_chunk$set(
 )
 ```
 
-# ascorthemes
+# ascorthemes <img src="man/figures/ascorthemes.png" width="100px" align="right"/>
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of ascorthemes is to provide access to an ASCoR template for [xaringan](https://slides.yihui.org/xaringan/#1) slides. 
+The goal of `ascorthemes` is to provide access to an ASCoR template for [xaringan](https://slides.yihui.org/xaringan/#1) slides. 
 
-
+I actually know *very little* css and was only able to build this template using code from [Athanasia Monika Mowinckel](https://github.com/Athanasiamo/uiothemes/) who made a very cool theme package for the University of Oslo. Be sure to check it out!
 
 
 ## Installation
@@ -44,7 +44,6 @@ Check out a live version of the template [here](https://favstats.github.io/ascor
 ```{r, echo = FALSE, out.width="100%", fig.cap=c("Title Slide", "Normal Slide", "Black Slide", "White Slide")}
 knitr::include_graphics(list.files("man/figures/", "preview", full.names = TRUE))
 ```
-
 
 
 

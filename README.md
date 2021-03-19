@@ -1,14 +1,19 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ascorthemes
+# ascorthemes <img src="man/figures/ascorthemes.png" width="100px" align="right"/>
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-The goal of ascorthemes is to provide access to an ASCoR template for
+The goal of `ascorthemes` is to provide access to an ASCoR template for
 [xaringan](https://slides.yihui.org/xaringan/#1) slides.
+
+I actually know *very little* css and was only able to build this
+template using code from [Athanasia Monika
+Mowinckel](https://github.com/Athanasiamo/uiothemes/) who made a very
+cool theme package for the University of Oslo. Be sure to check it out\!
 
 ## Installation
 
