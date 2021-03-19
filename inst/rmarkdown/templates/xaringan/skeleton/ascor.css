@@ -19,8 +19,13 @@ h2, h3 {
   color: #e22;
 }
 
-p,  a,  code, ul, li {
-  font-size: 1.2em;
+p,  a,  code {
+  font-size: 1.0em;
+  color: #000;
+}
+
+ul, li {
+  font-size: 1em;
   color: #000;
 }
 
@@ -42,7 +47,7 @@ ul li::marker {
 
 .remark-slide-content {
   border-top:    20px solid white;
-  border-left:  20px solid white; 
+  border-left:  20px solid white;
   border-bottom: 20px solid white;
   background-color: #eff;
 }
@@ -152,14 +157,20 @@ ul li::marker {
   text-shadow: none;
 }
 
-.black p,  
-.black a,  
-.black code, 
-.black ul, 
-.black li {
-  font-size: 1.2em;
+.black p,
+.black a,
+.black code {
+  font-size: 1em;
   color: #fff;
 }
+
+
+.black ul,
+.black li {
+  font-size: 1em;
+  color: #fff;
+}
+
 
 
 ul li::marker {
@@ -169,6 +180,7 @@ ul li::marker {
 /***************/
 /**** white ****/
 /***************/
+
 .white {
   background-color: #fff;
   border-color: #fff;

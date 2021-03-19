@@ -12,7 +12,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false       
-      slideNumberFormat: "%current%"
+      slideNumberFormat: "%current%"  
       ratio: "16:9"
 ---
 
@@ -48,6 +48,17 @@ It's also easy to add $\LaTeX$ code
 $$x^n + y^n = z^n $$
 
 Three dashes make a new slide
+
+---
+
+
+# Heading 1
+
+- something  
+- something more
+
+1. numbered lists
+1. number two list
 
 ---
 
@@ -143,6 +154,12 @@ class: black
 ## Heading 2
 
 ### Heading 3
+
+- something  
+- something more
+
+1. numbered lists
+1. number two list
 
 ---
 
