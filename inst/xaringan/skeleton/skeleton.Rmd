@@ -1,0 +1,209 @@
+---
+title: "A {xaringan} template for ASCoR presentations"
+subtitle: "s u b t i t l e"
+author: "Fabio Votta"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: [ascor.css, default]
+    lib_dir: libs
+    nature:
+      titleSlideClass: [bottom, left]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false       
+      slideNumberFormat: "%current%"                  # 12
+      ratio: "16:9"
+---
+
+layout: true
+    
+<div class="logo"></div> 
+
+
+```{r setup, include=FALSE}
+# Here you can place global options for the entire document.
+# Mostly used for knitr settings, but can also load data etc.
+# Whatever happens here will not show in the presentation.
+knitr::opts_chunk$set(fig.retina = 3, 
+                      warning = FALSE, 
+                      message = FALSE,
+                      echo = TRUE)
+```
+
+---
+
+
+# Heading 1
+
+You can use several heading levels
+
+## Heading 2
+
+This is text under a second level heading. And some **bold** and  _italics_ text.
+
+### Heading 3
+
+It's also easy to add $\LaTeX$ code
+$$x^n + y^n = z^n $$
+
+Three dashes make a new slide
+
+---
+
+## Add some R code
+
+```{r, fig.height=5}
+summary(mtcars)
+```
+
+---
+
+## Add cool gifs to your slides!
+
+
+![](https://s4.gifyu.com/images/ezgif-4-d64ba87b438c.gif)
+
+---
+
+## Create two columns
+
+.pull-left[
+
+This text goes in the left column.
+
+![](https://s4.gifyu.com/images/ezgif-4-d64ba87b438c.gif)
+
+]
+
+.pull-right[
+
+This text goes in the right column.
+
+![](https://s4.gifyu.com/images/ezgif-4-d64ba87b438c.gif)
+
+
+]
+
+
+
+---
+
+class: middle, center
+
+# You can also create *special* slides
+
+
+For example:
+
+`class: white`
+
+gives you a white background rather than a babyblue one. 
+
+This comes in handy for graphs (with white backgrounds).
+
+---
+
+class: white
+
+### add `class: white`
+
+```{r, echo = F}
+if(!require(ggplot2)){
+    install.packages("ggplot2")
+    library(ggplot2)
+}
+```
+
+
+
+```{r, fig.width=10, fig.height=5.5}
+ggplot(diamonds, aes(x = carat, y = price, color = clarity)) +
+  geom_point() +
+  theme_minimal() 
+
+```
+
+
+---
+
+class: black, middle
+
+# a black slide with middle centering
+
+using `class: black`
+
+
+---
+
+class: black
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+---
+
+layout: false
+class: title-slide
+
+<br>
+
+## You can also load in the title slide again
+
+adding `layout: false` cancels the logo for all slides following it
+
+---
+
+layout: true
+<div class="logo"></div> 
+
+<!-- Re-add logo by adding a blank slide with this content -->
+---
+
+But it can be re-added  using a slide with 
+
+```bash
+layout: true
+<div class="logo"></div> 
+```
+
+at the top.
+
+---
+
+# Hope you find this useful!
+
+
+.pull-left[
+
+![](https://media.tenor.com/images/abf1057f2d6774fa38997e8987f18949/tenor.gif)
+![](https://media.tenor.com/images/abf1057f2d6774fa38997e8987f18949/tenor.gif)
+
+![](https://media.tenor.com/images/abf1057f2d6774fa38997e8987f18949/tenor.gif)
+![](https://media.tenor.com/images/abf1057f2d6774fa38997e8987f18949/tenor.gif)
+
+![](https://media.tenor.com/images/abf1057f2d6774fa38997e8987f18949/tenor.gif)
+![](https://media.tenor.com/images/abf1057f2d6774fa38997e8987f18949/tenor.gif)
+
+
+]
+
+.pull-right[
+
+![](https://media.tenor.com/images/abf1057f2d6774fa38997e8987f18949/tenor.gif)
+![](https://media.tenor.com/images/abf1057f2d6774fa38997e8987f18949/tenor.gif)
+
+![](https://media.tenor.com/images/abf1057f2d6774fa38997e8987f18949/tenor.gif)
+![](https://media.tenor.com/images/abf1057f2d6774fa38997e8987f18949/tenor.gif)
+
+![](https://media.tenor.com/images/abf1057f2d6774fa38997e8987f18949/tenor.gif)
+![](https://media.tenor.com/images/abf1057f2d6774fa38997e8987f18949/tenor.gif)
+
+
+]
+
+
+

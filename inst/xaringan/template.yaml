@@ -1,0 +1,4 @@
+name: ASCoR Presentation template
+description: >
+   Standard xaringan ASCoR template for presentations
+create_dir: TRUE
