@@ -18,37 +18,34 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of ascorthemes is to ...
+The goal of ascorthemes is to provide access to an ASCoR template for [xaringan](https://slides.yihui.org/xaringan/#1) slides. 
+
+
+
 
 ## Installation
 
-You can install the released version of ascorthemes from [CRAN](https://CRAN.R-project.org) with:
+You can install `ascorthemes` from GitHub with:
 
 ``` r
-install.packages("ascorthemes")
+devtools::install_github("favstats/ascorthemes")
 ```
 
-## Example
+## Basic use
 
-This is a basic example which shows you how to solve a common problem:
+xaringan presentation with ASCoR branding can be access easily using the RStudio IDE, by selecting `File` -> `R markdown ...` -> `From Template`.
 
-```{r example}
-library(ascorthemes)
-## basic example code
+![](man/figures/newrmd.png)
+
+## Preview
+
+Check out a live version of the template [here](https://favstats.github.io/ascorthemes/).
+
+```{r, echo = FALSE, out.width="100%", fig.cap=c("Title Slide", "Normal Slide", "Black Slide", "White Slide")}
+knitr::include_graphics(list.files("man/figures/", "preview", full.names = TRUE))
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
-```{r cars}
-summary(cars)
-```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
 
-You can also embed plots, for example:
 
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
